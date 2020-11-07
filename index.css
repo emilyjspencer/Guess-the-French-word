@@ -34,13 +34,22 @@ main {
     font-size: 2rem;
 }
 
+.word {
+    width: 100px;
+    color: white;
+    text-align: center;
+    position: relative;
+    left: 600px;
+    font-size: 18px;
+}
+
 
 h1 {
     font-size: 4rem;
     text-align: center;
     position: absolute;
     width: 100%;
-    top: 52%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
