@@ -63,11 +63,18 @@ document.querySelector('.checkanswer').addEventListener('click', function() {
 
 document.querySelector('.next').addEventListener('click', function() {
     console.log('Next')
+    randomWord = words[Math.floor(Math.random() * words.length)];
+    document.querySelector('.word').textContent = randomWord;
 });
 
 document.querySelector('.again').addEventListener('click', function() {
+    randomWord = words[Math.floor(Math.random() * words.length)];
     score = score;
     document.querySelector('body').style.backgroundColor = "#B0E8F0";
+
+    
+    document.querySelector('.score').textContent = score;
+    document.querySelector('.guess').value = '';
 });
 
 
