@@ -12,14 +12,23 @@
       <p class="word">Word will go here - change dynamically</p>
     </header>
     <main>
+      <section class="possibleanswers">
+          <h3>Select from the following answers:</h3>
+          <p>car, bike, rabbit, plate, cat, pencil, apple, airplane, dog, cup, mother, sister, 
+          flower, book, teddy, brother, bird, bed, toilet, sister
+          </p>
+      </section>
       <section class="leftblock">
-        <input type="text" class="guess" />
+        <input type="text" class="guess" placeholder="Enter your answer" />
         <p class="test"></p>
         <button class="checkanswer">Check Answer</button>
       </section>
+      <section class="next">
+          <button class="next">Next</button>
+      </section>
       <section class="rightblock">
-        <p class="message">********</p>
-        <p class="label-score"> Score: <span class="score">*******</span></p>
+        <p class="message"></p>
+        <p class="label-score"> Score: <span class="score"></span></p>
       </section>
     </main>
     <script src="index.js"></script>
