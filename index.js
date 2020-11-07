@@ -51,9 +51,11 @@ document.querySelector('.checkanswer').addEventListener('click', function() {
        if(french_english[i].key === guess.value) {
            document.querySelector('.message').textContent = "Correct Answer";
            score += 1;
+           document.querySelector('body').style.backgroundColor = '#60b347';
         } else {
             document.querySelector('.message').textContent = "Wrong Answer"
             score -= 1;
+            document.querySelector('body').style.backgroundColor = "red";
         }
     }
 })
@@ -61,6 +63,11 @@ document.querySelector('.checkanswer').addEventListener('click', function() {
 
 document.querySelector('.next').addEventListener('click', function() {
     console.log('Next')
+});
+
+document.querySelector('.again').addEventListener('click', function() {
+    score = score;
+    document.querySelector('body').style.backgroundColor = "#B0E8F0";
 });
 
 
