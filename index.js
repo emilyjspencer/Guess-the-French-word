@@ -7,6 +7,7 @@ let words = ["un chat", "un chien", "un lapin", "un oiseau", "une livre", "une p
 
 let randomWord = words[Math.floor(Math.random() * words.length)];
 console.log(randomWord)
+document.querySelector('.word').textContent = randomWord;
 
 let french_english = [ 
     {"un chat": "cat"}, 
@@ -34,20 +35,18 @@ let french_english = [
 
 document.querySelector('.word').textContent = randomWord;
 
-
-//document.querySelector('.checkanswer').addEventListener('click', function () {
-  //  const guess = document.querySelector('.guess').value;
-    //console.log(guess);
-//});
-
 document.querySelector('.score').textContent = score;
+
+
 
 document.querySelector('.checkanswer').addEventListener('click', function() {
     const guess = document.querySelector('.guess').value;
     console.log(guess);
     
-    for (let i = 0; i < french_english.length; i++) {
-        console.log(french_english[i]);
+    french_english.forEach((french) => 
+    console.log(french.value))
+    //for (let i = 0; i < french_english.length; i++) {
+      //  console.log(french_english[i]);
        if(french_english[i].key === guess.value) {
            document.querySelector('.message').textContent = "Correct Answer";
            score += 1;
@@ -57,7 +56,7 @@ document.querySelector('.checkanswer').addEventListener('click', function() {
             score -= 1;
             document.querySelector('body').style.backgroundColor = "red";
         }
-    }
+     
 })
 
 
