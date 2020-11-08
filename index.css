@@ -7,7 +7,7 @@ html {
 body {
     font-family: 'Press Start 2P', sans-serif;
     color: rgb(128, 126, 126);
-    background-color: rgb(176, 232, 240);
+    background-color: #A8577E;
     border: solid white 5px;
     padding: 10px;
    
@@ -47,17 +47,44 @@ main {
 h1 {
     font-size: 4rem;
     text-align: center;
-    position: absolute;
+    position: relative;
+    bottom: -17px;
     width: 100%;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+}
+
+.strip {
+    background-color: #f0c1ec;
+    height: 80px;
 }
 
 
 .possibleanswers {
+    border: solid white 5px;
+    font-size: 18px;
+    position: relative;
+    bottom: 100px;
+    width: 500px;
+    text-align: center;
+    color: white;
+}
 
+.paris {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    bottom: 400px;
+    position: relative;
+    left: -1px;
 
+}
+
+.parispics {
+    display: flex;
+    flex-direction: row;
 }
 
 .again {
