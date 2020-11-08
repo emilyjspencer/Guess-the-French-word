@@ -45,100 +45,89 @@ document.querySelector('.word').textContent = randomWord;
 
 document.querySelector('.score').textContent = score;
 
-
-
 document.querySelector('.checkanswer').addEventListener('click', function() {
     let guess = document.querySelector('.guess').value;
     console.log(guess);
    
         if (randomWord === "un chat" && guess === "cat" ){
-              displayCorrect();
-            
-
+          displayCorrect();
         } else if (randomWord === "un chien" && guess === "dog") {
-
-            displayCorrect();
+          displayCorrect();
         } else if (randomWord == "un lapin" && guess === "rabbit") {
             displayCorrect();
-         } else if (randomWord === "un oiseau" && guess === "bird") {
+        } else if (randomWord === "un oiseau" && guess === "bird") {
             displayCorrect();
-            } else if (randomWord === "aller" && guess === "to go") {
-                displayCorrect();
-            } else if (randomWord === "etre" && guess === "to be") {
-                displayCorrect();
-            } else if (randomWord === "avoir" && guess === "to have") {
-                displayCorrect();
-            } else if (randomWord === "dire" && guess === "to say") {
-                displayCorrect();
-         } else if (randomWord === "une livre" && guess === "book") {
+        } else if (randomWord === "aller" && guess === "to go") {
             displayCorrect();
-            } else if (randomWord === "il" && guess === "he") {
-                displayCorrect();
-            } else if (randomWord === "elle" && guess === "she") {
-                displayCorrect();
-            } else if (randomWord === "nouse" && guess === "us") {
-                displayCorrect();
+        } else if (randomWord === "etre" && guess === "to be") {
+            displayCorrect();
+        } else if (randomWord === "avoir" && guess === "to have") {
+            displayCorrect();
+        } else if (randomWord === "dire" && guess === "to say") {
+            displayCorrect();
+        } else if (randomWord === "une livre" && guess === "book") {
+            displayCorrect();
+        } else if (randomWord === "il" && guess === "he") {
+            displayCorrect();
+        } else if (randomWord === "elle" && guess === "she") {
+            displayCorrect();
+        } else if (randomWord === "nouse" && guess === "us") {
+            displayCorrect();
          } else if (randomWord === "une pomme" && guess === "apple") {
             displayCorrect();
          } else if (randomWord === "une assiette" && guess === "plate") {
             displayCorrect();
-
         } else if (randomWord === "une tasse" && guess === "cup") {
             displayCorrect();
-            } else if (randomWord === "un frere" && guess == "brother") {
-                displayCorrect();
-              } else if (randomWord === "une mere" && guess === "mother") {
-                displayCorrect();
-               } else if(randomWord === "un pere" && guess === "father") {
-                displayCorrect();
-              } else if(randomWord === "une soeur" && guess === "sister"){
-                displayCorrect();
+        } else if (randomWord === "un frere" && guess == "brother") {
+            displayCorrect();
+        } else if (randomWord === "une mere" && guess === "mother") {
+            displayCorrect();
+        } else if(randomWord === "un pere" && guess === "father") {
+            displayCorrect();
+        } else if(randomWord === "une soeur" && guess === "sister"){
+            displayCorrect();
         } else if (randomWord === "un lit" && guess === "bed"){
             displayCorrect();
-    } else if(randomWord ==="une toilette" && guess === "toilet"){
-        displayCorrect();
- } else if(randomWord === "un crayon" && guess === "pencil"){;
-    displayCorrect();
- } else if(randomWord === "une fleur" && guess === "flower"){;
-    displayCorrect();
-} else if (randomWord === "un train" && guess === "train"){;
-    displayCorrect();
-} else if(randomWord === "une voiture" && guess === "car"){;
-    displayCorrect();
- } else if(randomWord === "un velo" && guess === "bike"){;
-    displayCorrect();
- } else if(randomWord === "un avion" && guess === "plane"){;
-    displayCorrect();
-} else if(randomWord === "un ours en peluche" && guess === "teddy"){
-    displayCorrect();
-          } else {
+        } else if(randomWord ==="une toilette" && guess === "toilet"){
+            displayCorrect();
+        } else if(randomWord === "un crayon" && guess === "pencil"){;
+           displayCorrect();
+        } else if(randomWord === "une fleur" && guess === "flower"){;
+           displayCorrect();
+        } else if (randomWord === "un train" && guess === "train"){;
+           displayCorrect();
+        } else if(randomWord === "une voiture" && guess === "car"){;
+           displayCorrect();
+        } else if(randomWord === "un velo" && guess === "bike"){;
+          displayCorrect();
+        } else if(randomWord === "un avion" && guess === "plane"){;
+          displayCorrect();
+        } else if(randomWord === "un ours en peluche" && guess === "teddy"){
+          displayCorrect();
+        } else {
             document.querySelector('.message').textContent = "Wrong Answer"
-             score -= 1;
-             document.querySelector('.score').textContent = score;
-             document.querySelector('body').style.backgroundColor = "red";
+            score -= 1;
+            document.querySelector('.score').textContent = score;
+            document.querySelector('body').style.backgroundColor = "red";
           }
         }
-)
-
-    
-    
+    )
 
 
-document.querySelector('.next').addEventListener('click', function() {
-    console.log('Next')
-    randomWord = words[Math.floor(Math.random() * words.length)];
-    document.querySelector('.word').textContent = randomWord;
-    document.querySelector('.guess').value = '';
-    document.querySelector('body').backgroundColor = "#B0E8F0";
-});
+    document.querySelector('.next').addEventListener('click', function() {
+      console.log('Next')
+      randomWord = words[Math.floor(Math.random() * words.length)];
+      document.querySelector('.word').textContent = randomWord;
+      document.querySelector('.guess').value = '';
+      document.querySelector('body').backgroundColor = "#B0E8F0";
+    });
 
-document.querySelector('.again').addEventListener('click', function() {
-    randomWord = words[Math.floor(Math.random() * words.length)];
-    score = 25;
-    document.querySelector('body').style.backgroundColor = "#B0E8F0";
-
-    
-    document.querySelector('.score').textContent = score;
-    document.querySelector('.guess').value = '';
-});
+    document.querySelector('.again').addEventListener('click', function() {
+      randomWord = words[Math.floor(Math.random() * words.length)];
+      score = 25;
+      document.querySelector('body').style.backgroundColor = "#B0E8F0";
+      document.querySelector('.score').textContent = score;
+      document.querySelector('.guess').value = '';
+    });
 
