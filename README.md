@@ -3,7 +3,7 @@
 ### About Guess the French word
 
 Guess the French word is a simple game built with vanilla JavaScript, deployed at the following linke:
-http://imaginary-wool.surge.sh/
+http://numberless-impulse.surge.sh/
 
 Users are asked to input the correct English translation of the French words
 
@@ -20,4 +20,4 @@ git clone https://github.com/emilyjspencer/Guess-the-French-word.git
 ![game](game.png)
 
 * Deployed at:
-http://imaginary-wool.surge.sh/
+http://numberless-impulse.surge.sh/
