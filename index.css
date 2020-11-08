@@ -13,7 +13,6 @@ body {
    
 }
 
-
 main {
     height: 65vh;
     color: rgb(165, 161, 161);
@@ -34,13 +33,19 @@ main {
     font-size: 2rem;
 }
 
+.message {
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+
 .word {
-    width: 100px;
+    width: 500px;
     color: white;
     text-align: center;
     position: relative;
-    left: 600px;
-    font-size: 32px;
+    left: 500px;
+    font-size: 36px;
 }
 
 
@@ -48,17 +53,18 @@ h1 {
     font-size: 4rem;
     text-align: center;
     position: relative;
-    bottom: -17px;
+    bottom: -1px;
     width: 100%;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    
 }
 
 .strip {
-    background-color: #f0c1ec;
-    height: 80px;
+    background-color: #A8577E;
+    height: 90px;
 }
 
 
@@ -66,17 +72,17 @@ h1 {
     border: solid white 5px;
     font-size: 18px;
     position: relative;
-    bottom: 100px;
+    bottom: 120px;
     width: 500px;
     text-align: center;
-    color: white;
+    color: #c5bbc5;
 }
 
 .paris {
     width: 200px;
     height: 100px;
     position: relative;
-    bottom: 400px;
+    bottom: 420px;
     position: relative;
     left: -1px;
 
@@ -85,14 +91,82 @@ h1 {
 .parispics {
     display: flex;
     flex-direction: row;
+    position: relative;
+    top: 2px;
+}
+
+
+.pwords {
+    padding: 10px;
 }
 
 .again {
-  position: absolute;
-  top: 15rem;
-  left: 15rem;
-  width: 150px;
-  height: 70px;
+  position: relative;
+  bottom: -15px;
+  right: 235px;
+  width: 120px;
+  height: 40px;
   font-size: 18px;
   color: rgb(78, 73, 73);
+  background-color: #c5bbc5;
+  border-radius: 5px;
+}
+
+.guess {
+    width: 290px;
+    height: 40px;
+    position: relative;
+    bottom: 120px;
+    left: 90px;
+    border-radius: 5px;
+    background-color: #c5bbc5;
+}
+
+
+.scores {
+    position: absolute;
+    bottom: 200px;
+    right: 60px;
+    display: flex;
+    flex-container: row;
+    color: white;
+    font-size: 28px;
+}
+
+.label-score {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+}
+
+.mix {
+    position: relative;
+    bottom: -20px;
+    
+}
+  
+
+
+.next {
+    position: relative;
+    bottom: -16px;
+    left: -110px;
+    width: 120px;
+    height: 40px;
+    background-color: #c5bbc5;
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgb(78, 73, 73);
+}
+
+.checkanswer {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    bottom: 16px;
+    left: -68px;
+    background-color: #c5bbc5;
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgb(78, 73, 73);
 }

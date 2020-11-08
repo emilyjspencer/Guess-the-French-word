@@ -1,9 +1,10 @@
 
 
-let score = 25;
+let score = 10;
 
 let words = ["un chat", "un chien", "un lapin", "un oiseau", "une livre", "une pomme", "une assiette", "une tasse", "un frere", "une mere", "un pere", "une soeur", "un lit", "une toilette", 
-"un crayon", "une fleur", "un train", "une voiture", "un velo", "un avion", "un ours en peluche"];
+"un crayon", "une fleur", "un train", "une voiture", "un velo", "un avion", "un ours en peluche", "un pere", "etre", "avoir", "nous", "dire", "aller", "il", "elle", "un t-shirt", "une jupe", "un pull",
+"des pantalons", "une salle de jour", "une chambre", "une cuisine", "une salle de bains"];
 
 let randomWord = words[Math.floor(Math.random() * words.length)];
 console.log(randomWord)
@@ -11,10 +12,10 @@ document.querySelector('.word').textContent = randomWord;
 
 
 const displayCorrect = () => {
-    document.querySelector('body').style.backgroundColor = "yellow";
+    document.querySelector('body').style.backgroundColor = "white";
     document.querySelector('.message').textContent = "Correct Answer";
     score += 1;
-    document.querySelector('.score').textContent = score;   
+    document.querySelector('.score').textContent = score;  
 };
 
 let french_english = [ 
@@ -38,7 +39,20 @@ let french_english = [
     {"french": "une voiture", "english": "car"}, 
     {"french": "un velo", "english": "bike"}, 
     {"french": "un avion", "english": "plane"}, 
-    {"french": "un ours en peluche", "english": "teddy"} 
+    {"french": "un ours en peluche", "english": "teddy"},
+    {"french": "il", "english": "he"},
+    {"french": "elle", "english": "she"},
+    {"french": "nous", "english": "us"},
+    {"french": "un pull", "english": "jumper"},
+    {"french": "une jupe", "english": "skirt"},
+    {"french": "des pantalons", "english": "trousers"},
+    {"french": "un t-shirt", "english": "t-shirt"},
+    {"french": "une salle de jour", "english": "living room"},
+    {"french": "une cuisine", "english": "kitchen"},
+    {"french": "une salle de bains", "english": "bathroom"},
+    {"french": "une chambre", "english": "bedroom"},
+    
+    
 ]
 
 document.querySelector('.word').textContent = randomWord;
@@ -105,6 +119,22 @@ document.querySelector('.checkanswer').addEventListener('click', function() {
           displayCorrect();
         } else if(randomWord === "un ours en peluche" && guess === "teddy"){
           displayCorrect();
+        } else if(randomWord === "un t-shirt" && guess === "t-shirt"){
+            displayCorrect();
+        } else if(randomWord === "un pull" && guess === "jumper"){
+            displayCorrect();
+        } else if(randomWord === "une jupe" && guess === "skirt"){
+            displayCorrect();
+        } else if(randomWord === "des pantalons" && guess === "trousers"){
+            displayCorrect();
+        } else if(randomWord === "une chambre" && guess === "bedroom"){
+            displayCorrect();
+        } else if(randomWord === "une salle de bains" && guess === "bathroom"){
+            displayCorrect();
+        } else if(randomWord === "une salle de jour" && guess === "living room"){
+            displayCorrect();
+        } else if(randomWord === "une cuisine" && guess === "kitchen"){
+            displayCorrect();
         } else {
             document.querySelector('.message').textContent = "Wrong Answer"
             score -= 1;
@@ -120,13 +150,14 @@ document.querySelector('.checkanswer').addEventListener('click', function() {
       randomWord = words[Math.floor(Math.random() * words.length)];
       document.querySelector('.word').textContent = randomWord;
       document.querySelector('.guess').value = '';
-      document.querySelector('body').backgroundColor = "#B0E8F0";
+      document.querySelector('body').style.backgroundColor = "#A8577E";
+      document.querySelector('.message').textContent = '';
     });
 
     document.querySelector('.again').addEventListener('click', function() {
       randomWord = words[Math.floor(Math.random() * words.length)];
       score = 25;
-      document.querySelector('body').style.backgroundColor = "#B0E8F0";
+      document.querySelector('body').style.backgroundColor = "#A8577E";
       document.querySelector('.score').textContent = score;
       document.querySelector('.guess').value = '';
     });
