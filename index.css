@@ -89,6 +89,10 @@ h1 {
 
 .again {
   position: absolute;
-  top: 2rem;
-  left: 2rem;
+  top: 15rem;
+  left: 15rem;
+  width: 150px;
+  height: 70px;
+  font-size: 18px;
+  color: rgb(78, 73, 73);
 }

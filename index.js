@@ -9,6 +9,14 @@ let randomWord = words[Math.floor(Math.random() * words.length)];
 console.log(randomWord)
 document.querySelector('.word').textContent = randomWord;
 
+
+const displayCorrect = () => {
+    document.querySelector('body').style.backgroundColor = "yellow";
+    document.querySelector('.message').textContent = "Correct Answer";
+    score += 1;
+    document.querySelector('.score').textContent = score;   
+};
+
 let french_english = [ 
     {"french": "un chat", "english": "cat"}, 
     {"french": "un chien", "english": "dog"},
@@ -42,153 +50,67 @@ document.querySelector('.score').textContent = score;
 document.querySelector('.checkanswer').addEventListener('click', function() {
     let guess = document.querySelector('.guess').value;
     console.log(guess);
-    //for (let i = 0; i < french_english.length; i++) {
-        //console.log(french_english[i]);
-       //if(french_english["french"] === french_english["english"]) {
+   
         if (randomWord === "un chat" && guess === "cat" ){
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+              displayCorrect();
             
 
         } else if (randomWord === "un chien" && guess === "dog") {
 
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+            displayCorrect();
         } else if (randomWord == "un lapin" && guess === "rabbit") {
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+            displayCorrect();
          } else if (randomWord === "un oiseau" && guess === "bird") {
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+            displayCorrect();
             } else if (randomWord === "aller" && guess === "to go") {
-                document.querySelector('.message').textContent = "Correct Answer";
-                score += 1;
-                document.querySelector('.score').textContent = score;
-                document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
             } else if (randomWord === "etre" && guess === "to be") {
-                document.querySelector('.message').textContent = "Correct Answer";
-                score += 1;
-                document.querySelector('.score').textContent = score;
-                document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
             } else if (randomWord === "avoir" && guess === "to have") {
-                document.querySelector('.message').textContent = "Correct Answer";
-                score += 1;
-                document.querySelector('.score').textContent = score;
-                document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
             } else if (randomWord === "dire" && guess === "to say") {
-                document.querySelector('.message').textContent = "Correct Answer";
-                score += 1;
-                document.querySelector('.score').textContent = score;
-                document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
          } else if (randomWord === "une livre" && guess === "book") {
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+            displayCorrect();
             } else if (randomWord === "il" && guess === "he") {
-                document.querySelector('.message').textContent = "Correct Answer";
-                score += 1;
-                document.querySelector('.score').textContent = score;
-                document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
             } else if (randomWord === "elle" && guess === "she") {
-                document.querySelector('.message').textContent = "Correct Answer";
-                score += 1;
-                document.querySelector('.score').textContent = score;
-                document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
             } else if (randomWord === "nouse" && guess === "us") {
-                document.querySelector('.message').textContent = "Correct Answer";
-                score += 1;
-                document.querySelector('.score').textContent = score;
-                document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
          } else if (randomWord === "une pomme" && guess === "apple") {
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+            displayCorrect();
          } else if (randomWord === "une assiette" && guess === "plate") {
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+            displayCorrect();
 
         } else if (randomWord === "une tasse" && guess === "cup") {
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+            displayCorrect();
             } else if (randomWord === "un frere" && guess == "brother") {
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
               } else if (randomWord === "une mere" && guess === "mother") {
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
                } else if(randomWord === "un pere" && guess === "father") {
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
               } else if(randomWord === "une soeur" && guess === "sister"){
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+                displayCorrect();
         } else if (randomWord === "un lit" && guess === "bed"){
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+            displayCorrect();
     } else if(randomWord ==="une toilette" && guess === "toilet"){
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+        displayCorrect();
  } else if(randomWord === "un crayon" && guess === "pencil"){;
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+    displayCorrect();
  } else if(randomWord === "une fleur" && guess === "flower"){;
-             document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+    displayCorrect();
 } else if (randomWord === "un train" && guess === "train"){;
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+    displayCorrect();
 } else if(randomWord === "une voiture" && guess === "car"){;
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+    displayCorrect();
  } else if(randomWord === "un velo" && guess === "bike"){;
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+    displayCorrect();
  } else if(randomWord === "un avion" && guess === "plane"){;
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+    displayCorrect();
 } else if(randomWord === "un ours en peluche" && guess === "teddy"){
-              document.querySelector('.message').textContent = "Correct Answer";
-              score += 1;
-              document.querySelector('.score').textContent = score;
-              document.querySelector('body').style.backgroundColor = '#60b347';
+    displayCorrect();
           } else {
             document.querySelector('.message').textContent = "Wrong Answer"
              score -= 1;
