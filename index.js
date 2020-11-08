@@ -62,8 +62,9 @@ document.querySelector('.score').textContent = score;
 document.querySelector('.checkanswer').addEventListener('click', function() {
     let guess = document.querySelector('.guess').value;
     console.log(guess);
-   
-        if (randomWord === "un chat" && guess === "cat" ){
+        if (score === 0) {
+            document.querySelector('.message').textContent = "Game Over!";
+        } else if (randomWord === "un chat" && guess === "cat" ){
           displayCorrect();
         } else if (randomWord === "un chien" && guess === "dog") {
           displayCorrect();
@@ -147,11 +148,15 @@ document.querySelector('.checkanswer').addEventListener('click', function() {
 
     document.querySelector('.next').addEventListener('click', function() {
       console.log('Next')
-      randomWord = words[Math.floor(Math.random() * words.length)];
-      document.querySelector('.word').textContent = randomWord;
-      document.querySelector('.guess').value = '';
-      document.querySelector('body').style.backgroundColor = "#A8577E";
-      document.querySelector('.message').textContent = '';
+      if(score > 0) {
+        randomWord = words[Math.floor(Math.random() * words.length)];
+        document.querySelector('.word').textContent = randomWord;
+        document.querySelector('.guess').value = '';
+        document.querySelector('body').style.backgroundColor = "#A8577E";
+        document.querySelector('.message').textContent = '';
+      } else {
+          document.querySelector('.message').textContent = "Game Over!";
+      }
     });
 
     document.querySelector('.again').addEventListener('click', function() {

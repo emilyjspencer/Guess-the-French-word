@@ -17,6 +17,7 @@ git clone https://github.com/emilyjspencer/Guess-the-French-word.git
 * Open the index.html file in the browser
 
 * What is looks like:
+
 ![game](game.png)
 
 * Deployed at:
